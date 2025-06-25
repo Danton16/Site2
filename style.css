@@ -1,22 +1,106 @@
-.carousel-inner{
+/* Cores principais */
+:root {
+    --verde-escuro: #2E7D32;
+    --verde-claro: #A5D6A7;
+    --branco: #FFFFFF;
+    --cinza-suave: #F5F5F5;
+}
+
+/* Fundo geral */
+body {
+    background-color: var(--cinza-suave);
+    color: var(--verde-escuro);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--verde-escuro) !important;
+}
+
+.navbar a,
+.navbar .form-control {
+    color: var(--branco) !important;
+}
+
+.navbar .btn-outline-success {
+    border-color: var(--branco);
+    color: var(--branco);
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: var(--verde-claro);
+    color: var(--verde-escuro);
+}
+
+/* Ícone do usuário */
+.fa-circle-user {
+    font-size: 30px;
+    margin-left: 20px;
+    color: var(--branco);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--verde-escuro);
+}
+
+a:hover {
+    color: var(--verde-claro);
+}
+
+/* Cards */
+.card {
+    background-color: var(--branco);
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Títulos */
+.card-title {
+    margin-bottom: 20px;
+    color: var(--verde-escuro);
+    font-weight: bold;
+}
+
+/* Botões principais */
+.btn-primary {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-claro);
+    border-color: var(--verde-claro);
+    color: var(--verde-escuro);
+}
+
+/* Botões secundários */
+.btn-secondary {
+    background-color: var(--verde-claro);
+    border-color: var(--verde-claro);
+    color: var(--verde-escuro);
+}
+
+.btn-secondary:hover {
+    background-color: var(--verde-escuro);
+    border-color: var(--verde-escuro);
+    color: var(--branco);
+}
+
+/* Carousel */
+.carousel-inner {
     height: 30vh;
 }
 
-.card-title{
-    margin-bottom: 20px;
+/* Listas e filtros */
+.list-group-item {
+    background-color: var(--cinza-suave);
+    border: none;
 }
 
-.fa-circle-user{
-    font-size: 30px;
-    margin-left: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: #333;
-}
-
-a:hover{
-    text-decoration: none;
-    color: #333;
+/* Badges */
+.badge {
+    background-color: var(--verde-escuro);
+    color: var(--branco);
 }
